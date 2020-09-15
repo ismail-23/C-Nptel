@@ -2,18 +2,17 @@
 #include<vector>
 using namespace std;
 int main()
-{   
-    int n;
-	vector<int> arr ;
-	cout<<"Enter no of character you need for a array"<<endl;
-	cin>>n;
-	arr.resize(n);
-	int sum=0;
-	for (int i=0;i<n;i++)
+{int count;
+int sum=0;
+	vector<int> arr;
+	cout<<"enter the no of elements"<<endl;
+	cin>>count;
+	arr.resize(count);
+	for(int i=0;i<count;i++)	
 	{
-	arr[i]=i+1;
-	sum+=arr[i];
+		arr[i]=i;
+		sum+=arr[i];
 	}
-	cout<<sum<<endl;
+	cout<<"The sum of the values"<<sum<<endl;
 	return 0;
-}   
+}
